@@ -1,0 +1,198 @@
+
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<head>
+		<title>拦截统计</title>
+		<script src="Chart-1.0.1-beta.4.js"></script>
+		<script>
+			var ddata = [{
+					value: {*KV.abnormalAccess*},
+					color: "#96CDCD",
+					label: "异常访问"
+				},
+				{
+					value: {*KV.commandExecution*},
+					color: "#E2EAE9",
+					label: "命令执行"
+				},
+				{
+					value: {*KV.directoryDetection*},
+					color: "#D4CCC5",
+					label: "目录探测"
+				},
+				{
+					value: {*KV.fileAccess*},
+					color: "#949FB1",
+					label: "文件访问"
+				},
+				{
+					value: {*KV.fileContains*},
+					color: "#4D5360",
+					label: "文件包含"
+				},
+				{
+					value: {*KV.others*},
+					color: "#8B4C39",
+					label: "其他"
+				},
+				{
+					value: {*KV.scanner*},
+					color: "#458B74",
+					label: "扫描器扫描"
+				},
+				{
+					value: {*KV.sqlInjections*},
+					color: "#CD3700",
+					label: "SQL注入"
+				},
+				{
+					value: {*KV.xssAttack*},
+					color: "#D2691E",
+					label: "XSS攻击"
+				},
+                                {
+                                        value: {*KV['user-agent']*},
+                                        color: "#575757",
+                                        label: "用户代理"
+                                }
+
+			];
+
+			var TStamps = {};
+			var newDate = new Date();
+			for(var i = 0; i < 10; i++){
+				newDate.setTime(((Math.ceil(Date.parse(new Date()) / 86400000) - 1) - i) * 86400000);
+				TStamps[i] = newDate.toLocaleDateString();
+			}
+			
+			var ldata = {
+				labels: [
+					TStamps[9],TStamps[8], TStamps[7], TStamps[6], TStamps[5], TStamps[4], TStamps[3], TStamps[2], TStamps[1], TStamps[0]
+				],
+				datasets: [
+					{
+						lineItemName: "line",
+						fillColor: "rgba(151,187,205,0.5)",
+						strokeColor: "rgba(151,187,205,1)",
+						pointColor: "rgba(151,187,205,1)",
+						pointStrokeColor: "#fff",
+						data: [
+							{% local now = ngx.now() %} 
+							{% for i = 9, -1, -1 do %} 
+							{% if i < 9 then %}, {% end %}
+							{% key = ((math.ceil(now / 86400) - 1) - i) * 86400 %}
+							{% if Day[key .. ''] == nil then%}
+							0
+							{% else %}	
+							{*Day[key .. '']*}
+							{% end %}
+							{% end %}
+						]
+					}
+				]
+			};
+
+			var chartLine = null;
+
+			function clickCall(evt) {
+				var point = chartLine.getPointSingleAtEvent(evt);
+
+				if(point !== null)
+					alert(point.label + ": " + point.lineItemName + " ____ " + point.value);
+			}
+
+			function initEvent(chart, handler) {
+				var method = handler;
+				var eventType = "click";
+				var node = chart.chart.canvas;
+
+				if(node.addEventListener) {
+					node.addEventListener(eventType, method);
+				} else if(node.attachEvent) {
+					node.attachEvent("on" + eventType, method);
+				} else {
+					node["on" + eventType] = method;
+				}
+			}
+
+			window.onload = function() {
+				var doughnut = document.getElementById("doughnut").getContext("2d");
+				new Chart(doughnut).Doughnut(ddata);
+				var line = document.getElementById("line").getContext("2d");
+				chartLine = new Chart(line).Line(ldata);
+				initEvent(chartLine, clickCall);
+			}
+		</script>
+	</head>
+
+	<body>
+		<div style="position: absolute;width: 1054px;left: 50%;margin-left: -527px;">
+			<div style="height: 100px;width: 100%;">
+				<p style="font-family: '微软雅黑';font-size: 24px;">拦截统计</p>
+			</div>
+			<div style="min-width: 1054px;float: left;margin-bottom: 66px;">
+				<canvas id="line" width="1054" height="400"></canvas>
+			</div>
+			<div style="min-width: 500px;border-right: dashed #AAAAAA;padding-right: 50px;float: left;margin-bottom: 66px;">
+				<canvas id="doughnut" width="500" height="500"></canvas>
+			</div>
+			<div style="float: left;min-width: 500px;margin-bottom: 66px;">
+				<ul style="list-style: none;font-size: 16px;font-family: '微软雅黑';">
+					<li style="height: 40px;border-top: solid #96CDCD 2px;border-right: none;margin: 10px;">
+						<span style="display: block;height: 20px;margin-top: 8px;margin-left: 8px;">
+							<span style="width: 150px;float: left;">异常访问</span> {*KV.abnormalAccess*}次
+						</span>
+					</li>
+					<li style="height: 40px;border-top: solid #E2EAE9 2px;border-right: none;margin: 10px;">
+						<span style="display: block;height: 20px;margin-top: 8px;margin-left: 8px;">
+							<span style="width: 150px;float: left;">命令执行</span> {*KV.commandExecution*}次
+						</span>
+					</li>
+					<li style="height: 40px;border-top: solid #D4CCC5 2px;border-right: none;margin: 10px;">
+						<span style="display: block;height: 20px;margin-top: 8px;margin-left: 8px;">
+							<span style="width: 150px;float: left;">目录探测</span> {*KV.directoryDetection*}次
+						</span>
+					</li>
+					<li style="height: 40px;border-top: solid #949FB1 2px;border-right: none;margin: 10px;">
+						<span style="display: block;height: 20px;margin-top: 8px;margin-left: 8px;">
+							<span style="width: 150px;float: left;">文件访问</span> {*KV.fileAccess*}次
+						</span>
+					</li>
+					<li style="height: 40px;border-top: solid #4D5360 2px;border-right: none;margin: 10px;">
+						<span style="display: block;height: 20px;margin-top: 8px;margin-left: 8px;">
+							<span style="width: 150px;float: left;">文件包含</span> {*KV.fileContains*}次
+						</span>
+					</li>
+					<li style="height: 40px;border-top: solid #458B74 2px;border-right: none;margin: 10px;">
+						<span style="display: block;height: 20px;margin-top: 8px;margin-left: 8px;">
+							<span style="width: 150px;float: left;">扫描器扫描</span> {*KV.scanner*}次
+						</span>
+					</li>
+					<li style="height: 40px;border-top: solid #CD3700 2px;border-right: none;margin: 10px;">
+						<span style="display: block;height: 20px;margin-top: 8px;margin-left: 8px;">
+							<span style="width: 150px;float: left;">SQL注入</span> {*KV.sqlInjections*}次
+						</span>
+					</li>
+					<li style="height: 40px;border-top: solid #D2691E 2px;border-right: none;margin: 10px;">
+						<span style="display: block;height: 20px;margin-top: 8px;margin-left: 8px;">
+							<span style="width: 150px;float: left;">XSS攻击</span> {*KV.xssAttack*}次
+						</span>
+					</li>
+					<li style="height: 40px;border-top: solid #575757 2px;border-right: none;margin: 10px;">
+                                                <span style="display: block;height: 20px;margin-top: 8px;margin-left: 8px;">
+                                                        <span style="width: 150px;float: left;">用户代理</span> {*KV['user-agent']*}次
+                                                </span>
+                                        </li>
+
+					<li style="height: 40px;border-top: solid #8B4C39 2px;border-right: none;margin: 10px;">
+						<span style="display: block;height: 20px;margin-top: 8px;margin-left: 8px;">
+							<span style="width: 150px;float: left;">其他</span> {*KV.others*}次
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>

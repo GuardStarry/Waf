@@ -1,0 +1,910 @@
+[3944] 07 Mar 18:30:02.645 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.19 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 3944
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[3944] 07 Mar 18:30:02.646 # Server started, Redis version 2.8.19
+[3944] 07 Mar 18:30:02.646 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[3944] 07 Mar 18:30:02.646 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[3944] 07 Mar 18:30:02.646 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[3944] 07 Mar 18:30:02.646 * The server is now ready to accept connections on port 6379
+[3944 | signal handler] (1488882606) Received SIGINT scheduling shutdown...
+[3944] 07 Mar 18:30:06.486 # User requested shutdown...
+[3944] 07 Mar 18:30:06.486 * Saving the final RDB snapshot before exiting.
+[3944] 07 Mar 18:30:06.491 * DB saved on disk
+[3944] 07 Mar 18:30:06.491 # Redis is now ready to exit, bye bye...
+[3947] 07 Mar 18:30:10.962 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.19 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 3947
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[3947] 07 Mar 18:30:10.963 # Server started, Redis version 2.8.19
+[3947] 07 Mar 18:30:10.963 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[3947] 07 Mar 18:30:10.963 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[3947] 07 Mar 18:30:10.963 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[3947] 07 Mar 18:30:10.963 * DB loaded from disk: 0.000 seconds
+[3947] 07 Mar 18:30:10.963 * The server is now ready to accept connections on port 6379
+[2019] 17 Mar 09:10:38.815 # Fatal error, can't open config file '/usr/openresty/waf/conf/redis_6660'
+[2148] 17 Mar 09:11:09.250 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.19 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6660
+ |    `-._   `._    /     _.-'    |     PID: 2148
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[2148] 17 Mar 09:11:09.266 # Server started, Redis version 2.8.19
+[2148] 17 Mar 09:11:09.266 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[2148] 17 Mar 09:11:09.267 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[2148] 17 Mar 09:11:09.267 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[2148] 17 Mar 09:11:09.305 * DB loaded from disk: 0.038 seconds
+[2148] 17 Mar 09:11:09.306 * The server is now ready to accept connections on port 6660
+[2151] 17 Mar 09:11:12.838 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.19 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6661
+ |    `-._   `._    /     _.-'    |     PID: 2151
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[2151] 17 Mar 09:11:12.846 # Server started, Redis version 2.8.19
+[2151] 17 Mar 09:11:12.846 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[2151] 17 Mar 09:11:12.847 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[2151] 17 Mar 09:11:12.847 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[2151] 17 Mar 09:11:12.847 * DB loaded from disk: 0.000 seconds
+[2151] 17 Mar 09:11:12.847 * The server is now ready to accept connections on port 6661
+[2151] 17 Mar 09:11:13.841 * Connecting to MASTER 127.0.0.1:6660
+[2151] 17 Mar 09:11:13.841 * MASTER <-> SLAVE sync started
+[2151] 17 Mar 09:11:13.841 * Non blocking connect for SYNC fired the event.
+[2151] 17 Mar 09:11:13.841 * Master replied to PING, replication can continue...
+[2151] 17 Mar 09:11:13.841 * Partial resynchronization not possible (no cached master)
+[2148] 17 Mar 09:11:13.841 * Slave 127.0.0.1:6661 asks for synchronization
+[2148] 17 Mar 09:11:13.841 * Full resync requested by slave 127.0.0.1:6661
+[2148] 17 Mar 09:11:13.841 * Starting BGSAVE for SYNC with target: disk
+[2148] 17 Mar 09:11:13.841 * Background saving started by pid 2162
+[2151] 17 Mar 09:11:13.841 * Full resync from master: 401c567c4cb3881716d2b105aa774f7a299d6bf4:1
+[2162] 17 Mar 09:11:13.869 * DB saved on disk
+[2162] 17 Mar 09:11:13.869 * RDB: 0 MB of memory used by copy-on-write
+[2148] 17 Mar 09:11:13.876 * Background saving terminated with success
+[2148] 17 Mar 09:11:13.876 * Synchronization with slave 127.0.0.1:6661 succeeded
+[2151] 17 Mar 09:11:13.876 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+[2151] 17 Mar 09:11:13.876 * MASTER <-> SLAVE sync: Flushing old data
+[2151] 17 Mar 09:11:13.876 * MASTER <-> SLAVE sync: Loading DB in memory
+[2151] 17 Mar 09:11:13.876 * MASTER <-> SLAVE sync: Finished with success
+[2182] 17 Mar 09:11:15.844 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.19 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6662
+ |    `-._   `._    /     _.-'    |     PID: 2182
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[2182] 17 Mar 09:11:15.846 # Server started, Redis version 2.8.19
+[2182] 17 Mar 09:11:15.846 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[2182] 17 Mar 09:11:15.846 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[2182] 17 Mar 09:11:15.846 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[2182] 17 Mar 09:11:15.846 * DB loaded from disk: 0.000 seconds
+[2182] 17 Mar 09:11:15.846 * The server is now ready to accept connections on port 6662
+[2182] 17 Mar 09:11:16.847 * Connecting to MASTER 127.0.0.1:6660
+[2182] 17 Mar 09:11:16.847 * MASTER <-> SLAVE sync started
+[2182] 17 Mar 09:11:16.847 * Non blocking connect for SYNC fired the event.
+[2182] 17 Mar 09:11:16.847 * Master replied to PING, replication can continue...
+[2182] 17 Mar 09:11:16.847 * Partial resynchronization not possible (no cached master)
+[2148] 17 Mar 09:11:16.847 * Slave 127.0.0.1:6662 asks for synchronization
+[2148] 17 Mar 09:11:16.847 * Full resync requested by slave 127.0.0.1:6662
+[2148] 17 Mar 09:11:16.847 * Starting BGSAVE for SYNC with target: disk
+[2148] 17 Mar 09:11:16.847 * Background saving started by pid 2185
+[2182] 17 Mar 09:11:16.847 * Full resync from master: 401c567c4cb3881716d2b105aa774f7a299d6bf4:1
+[2185] 17 Mar 09:11:16.849 * DB saved on disk
+[2185] 17 Mar 09:11:16.849 * RDB: 0 MB of memory used by copy-on-write
+[2148] 17 Mar 09:11:16.913 * Background saving terminated with success
+[2148] 17 Mar 09:11:16.913 * Synchronization with slave 127.0.0.1:6662 succeeded
+[2182] 17 Mar 09:11:16.913 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+[2182] 17 Mar 09:11:16.913 * MASTER <-> SLAVE sync: Flushing old data
+[2182] 17 Mar 09:11:16.913 * MASTER <-> SLAVE sync: Loading DB in memory
+[2182] 17 Mar 09:11:16.913 * MASTER <-> SLAVE sync: Finished with success
+ssdb-server 1.9.4
+Copyright (c) 2012-2015 ssdb.io
+
+ssdb-server 1.9.4
+Copyright (c) 2012-2015 ssdb.io
+
+ssdb-server 1.9.4
+Copyright (c) 2012-2015 ssdb.io
+
+ssdb-server 1.9.4
+Copyright (c) 2012-2015 ssdb.io
+
+[2148 | signal handler] (1489751554) Received SIGTERM scheduling shutdown...
+[2148] 17 Mar 19:52:34.799 # User requested shutdown...
+[2148] 17 Mar 19:52:34.799 * Saving the final RDB snapshot before exiting.
+[2151 | signal handler] (1489751554) Received SIGTERM scheduling shutdown...
+[2151] 17 Mar 19:52:34.800 # User requested shutdown...
+[2151] 17 Mar 19:52:34.800 * Saving the final RDB snapshot before exiting.
+[2182 | signal handler] (1489751554) Received SIGTERM scheduling shutdown...
+[2182] 17 Mar 19:52:34.800 # User requested shutdown...
+[2182] 17 Mar 19:52:34.800 * Saving the final RDB snapshot before exiting.
+[2182] 17 Mar 19:52:35.512 * DB saved on disk
+[2182] 17 Mar 19:52:35.512 # Redis is now ready to exit, bye bye...
+[2151] 17 Mar 19:52:35.512 * DB saved on disk
+[2151] 17 Mar 19:52:35.513 # Redis is now ready to exit, bye bye...
+[2148] 17 Mar 19:52:35.513 * DB saved on disk
+[2148] 17 Mar 19:52:35.513 # Redis is now ready to exit, bye bye...
+ssdb-server 1.9.4
+Copyright (c) 2012-2015 ssdb.io
+
+ssdb-server 1.9.4
+Copyright (c) 2012-2015 ssdb.io
+
+ssdb-server 1.9.4
+Copyright (c) 2012-2015 ssdb.io
+
+ssdb-server 1.9.4
+Copyright (c) 2012-2015 ssdb.io
+
+[2196] 23 Mar 09:36:02.725 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.19 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6661
+ |    `-._   `._    /     _.-'    |     PID: 2196
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[2196] 23 Mar 09:36:02.728 # Server started, Redis version 2.8.19
+[2196] 23 Mar 09:36:02.728 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[2196] 23 Mar 09:36:02.728 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[2196] 23 Mar 09:36:02.728 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[2195] 23 Mar 09:36:02.729 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.19 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6660
+ |    `-._   `._    /     _.-'    |     PID: 2195
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[2195] 23 Mar 09:36:02.730 # Server started, Redis version 2.8.19
+[2195] 23 Mar 09:36:02.730 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[2195] 23 Mar 09:36:02.730 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[2195] 23 Mar 09:36:02.730 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[2197] 23 Mar 09:36:02.735 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.19 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6662
+ |    `-._   `._    /     _.-'    |     PID: 2197
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[2197] 23 Mar 09:36:02.737 # Server started, Redis version 2.8.19
+[2197] 23 Mar 09:36:02.737 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[2197] 23 Mar 09:36:02.737 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[2197] 23 Mar 09:36:02.737 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[2196] 23 Mar 09:36:02.768 * DB loaded from disk: 0.040 seconds
+[2196] 23 Mar 09:36:02.768 * The server is now ready to accept connections on port 6661
+[2195] 23 Mar 09:36:02.768 * DB loaded from disk: 0.038 seconds
+[2195] 23 Mar 09:36:02.768 * The server is now ready to accept connections on port 6660
+[2197] 23 Mar 09:36:02.768 * DB loaded from disk: 0.031 seconds
+[2197] 23 Mar 09:36:02.768 * The server is now ready to accept connections on port 6662
+[2196] 23 Mar 09:36:03.727 * Connecting to MASTER 127.0.0.1:6660
+[2196] 23 Mar 09:36:03.727 * MASTER <-> SLAVE sync started
+[2196] 23 Mar 09:36:03.727 * Non blocking connect for SYNC fired the event.
+[2196] 23 Mar 09:36:03.727 * Master replied to PING, replication can continue...
+[2196] 23 Mar 09:36:03.727 * Partial resynchronization not possible (no cached master)
+[2195] 23 Mar 09:36:03.727 * Slave 127.0.0.1:6661 asks for synchronization
+[2195] 23 Mar 09:36:03.727 * Full resync requested by slave 127.0.0.1:6661
+[2195] 23 Mar 09:36:03.727 * Starting BGSAVE for SYNC with target: disk
+[2195] 23 Mar 09:36:03.727 * Background saving started by pid 2271
+[2196] 23 Mar 09:36:03.727 * Full resync from master: b06ed3a36359dc10ad238d839d6727489a35c460:1
+[2271] 23 Mar 09:36:03.732 * DB saved on disk
+[2271] 23 Mar 09:36:03.732 * RDB: 0 MB of memory used by copy-on-write
+[2197] 23 Mar 09:36:03.738 * Connecting to MASTER 127.0.0.1:6660
+[2197] 23 Mar 09:36:03.738 * MASTER <-> SLAVE sync started
+[2197] 23 Mar 09:36:03.738 * Non blocking connect for SYNC fired the event.
+[2197] 23 Mar 09:36:03.740 * Master replied to PING, replication can continue...
+[2197] 23 Mar 09:36:03.740 * Partial resynchronization not possible (no cached master)
+[2195] 23 Mar 09:36:03.740 * Slave 127.0.0.1:6662 asks for synchronization
+[2195] 23 Mar 09:36:03.740 * Full resync requested by slave 127.0.0.1:6662
+[2197] 23 Mar 09:36:03.740 * Full resync from master: b06ed3a36359dc10ad238d839d6727489a35c460:1
+[2195] 23 Mar 09:36:03.740 * Waiting for end of BGSAVE for SYNC
+[2195] 23 Mar 09:36:03.828 * Background saving terminated with success
+[2196] 23 Mar 09:36:03.828 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+[2196] 23 Mar 09:36:03.828 * MASTER <-> SLAVE sync: Flushing old data
+[2196] 23 Mar 09:36:03.828 * MASTER <-> SLAVE sync: Loading DB in memory
+[2196] 23 Mar 09:36:03.828 * MASTER <-> SLAVE sync: Finished with success
+[2195] 23 Mar 09:36:03.828 * Synchronization with slave 127.0.0.1:6661 succeeded
+[2197] 23 Mar 09:36:03.828 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+[2195] 23 Mar 09:36:03.828 * Synchronization with slave 127.0.0.1:6662 succeeded
+[2197] 23 Mar 09:36:03.830 * MASTER <-> SLAVE sync: Flushing old data
+[2197] 23 Mar 09:36:03.830 * MASTER <-> SLAVE sync: Loading DB in memory
+[2197] 23 Mar 09:36:03.830 * MASTER <-> SLAVE sync: Finished with success
+[2196] 23 Mar 09:51:03.059 * 1 changes in 900 seconds. Saving...
+[2196] 23 Mar 09:51:03.059 * Background saving started by pid 2334
+[2197] 23 Mar 09:51:03.059 * 1 changes in 900 seconds. Saving...
+[2197] 23 Mar 09:51:03.059 * Background saving started by pid 2335
+[2335] 23 Mar 09:51:03.064 * DB saved on disk
+[2335] 23 Mar 09:51:03.064 * RDB: 0 MB of memory used by copy-on-write
+[2334] 23 Mar 09:51:03.064 * DB saved on disk
+[2334] 23 Mar 09:51:03.065 * RDB: 0 MB of memory used by copy-on-write
+[2197] 23 Mar 09:51:03.160 * Background saving terminated with success
+[2196] 23 Mar 09:51:03.160 * Background saving terminated with success
+[2195] 23 Mar 09:51:04.069 * 1 changes in 900 seconds. Saving...
+[2195] 23 Mar 09:51:04.069 * Background saving started by pid 2336
+[2336] 23 Mar 09:51:04.074 * DB saved on disk
+[2336] 23 Mar 09:51:04.074 * RDB: 0 MB of memory used by copy-on-write
+[2195] 23 Mar 09:51:04.170 * Background saving terminated with success
+[2197] 23 Mar 09:56:38.528 * 10 changes in 300 seconds. Saving...
+[2197] 23 Mar 09:56:38.528 * Background saving started by pid 2380
+[2196] 23 Mar 09:56:38.528 * 10 changes in 300 seconds. Saving...
+[2196] 23 Mar 09:56:38.528 * Background saving started by pid 2381
+[2195] 23 Mar 09:56:38.529 * 10 changes in 300 seconds. Saving...
+[2195] 23 Mar 09:56:38.529 * Background saving started by pid 2382
+[2382] 23 Mar 09:56:38.534 * DB saved on disk
+[2382] 23 Mar 09:56:38.534 * RDB: 0 MB of memory used by copy-on-write
+[2381] 23 Mar 09:56:38.534 * DB saved on disk
+[2381] 23 Mar 09:56:38.535 * RDB: 0 MB of memory used by copy-on-write
+[2380] 23 Mar 09:56:38.535 * DB saved on disk
+[2380] 23 Mar 09:56:38.535 * RDB: 0 MB of memory used by copy-on-write
+[2196] 23 Mar 09:56:38.628 * Background saving terminated with success
+[2197] 23 Mar 09:56:38.629 * Background saving terminated with success
+[2195] 23 Mar 09:56:38.629 * Background saving terminated with success
+[2195] 23 Mar 10:11:39.023 * 1 changes in 900 seconds. Saving...
+[2195] 23 Mar 10:11:39.024 * Background saving started by pid 2446
+[2196] 23 Mar 10:11:39.025 * 1 changes in 900 seconds. Saving...
+[2196] 23 Mar 10:11:39.026 * Background saving started by pid 2447
+[2197] 23 Mar 10:11:39.026 * 1 changes in 900 seconds. Saving...
+[2197] 23 Mar 10:11:39.026 * Background saving started by pid 2448
+[2446] 23 Mar 10:11:39.029 * DB saved on disk
+[2446] 23 Mar 10:11:39.029 * RDB: 0 MB of memory used by copy-on-write
+[2448] 23 Mar 10:11:39.030 * DB saved on disk
+[2448] 23 Mar 10:11:39.030 * RDB: 0 MB of memory used by copy-on-write
+[2447] 23 Mar 10:11:39.030 * DB saved on disk
+[2447] 23 Mar 10:11:39.030 * RDB: 0 MB of memory used by copy-on-write
+[2195] 23 Mar 10:11:39.125 * Background saving terminated with success
+[2196] 23 Mar 10:11:39.126 * Background saving terminated with success
+[2197] 23 Mar 10:11:39.127 * Background saving terminated with success
+[2195] 23 Mar 14:18:53.882 * 1 changes in 900 seconds. Saving...
+[2195] 23 Mar 14:18:53.915 * Background saving started by pid 3883
+[2197] 23 Mar 14:18:53.922 * 1 changes in 900 seconds. Saving...
+[2196] 23 Mar 14:18:53.923 * 1 changes in 900 seconds. Saving...
+[2196] 23 Mar 14:18:53.923 * Background saving started by pid 3885
+[2197] 23 Mar 14:18:53.923 * Background saving started by pid 3884
+[3884] 23 Mar 14:18:53.971 * DB saved on disk
+[3884] 23 Mar 14:18:53.971 * RDB: 0 MB of memory used by copy-on-write
+[3883] 23 Mar 14:18:53.972 * DB saved on disk
+[3883] 23 Mar 14:18:53.972 * RDB: 0 MB of memory used by copy-on-write
+[3885] 23 Mar 14:18:53.972 * DB saved on disk
+[3885] 23 Mar 14:18:53.972 * RDB: 2 MB of memory used by copy-on-write
+[2195] 23 Mar 14:18:54.016 * Background saving terminated with success
+[2196] 23 Mar 14:18:54.024 * Background saving terminated with success
+[2197] 23 Mar 14:18:54.025 * Background saving terminated with success
+[2196] 23 Mar 14:33:55.072 * 1 changes in 900 seconds. Saving...
+[2196] 23 Mar 14:33:55.076 * Background saving started by pid 3974
+[2195] 23 Mar 14:33:55.072 * 1 changes in 900 seconds. Saving...
+[2195] 23 Mar 14:33:55.076 * Background saving started by pid 3975
+[2197] 23 Mar 14:33:55.072 * 1 changes in 900 seconds. Saving...
+[2197] 23 Mar 14:33:55.076 * Background saving started by pid 3976
+[3975] 23 Mar 14:33:55.196 * DB saved on disk
+[3975] 23 Mar 14:33:55.196 * RDB: 0 MB of memory used by copy-on-write
+[3976] 23 Mar 14:33:55.197 * DB saved on disk
+[3976] 23 Mar 14:33:55.197 * RDB: 0 MB of memory used by copy-on-write
+[3974] 23 Mar 14:33:55.198 * DB saved on disk
+[3974] 23 Mar 14:33:55.198 * RDB: 0 MB of memory used by copy-on-write
+[2196] 23 Mar 14:33:55.278 * Background saving terminated with success
+[2195] 23 Mar 14:33:55.278 * Background saving terminated with success
+[2197] 23 Mar 14:33:55.278 * Background saving terminated with success
+[2195] 23 Mar 14:42:17.093 * 10 changes in 300 seconds. Saving...
+[2195] 23 Mar 14:42:17.094 * Background saving started by pid 4058
+[4058] 23 Mar 14:42:17.100 * DB saved on disk
+[4058] 23 Mar 14:42:17.101 * RDB: 0 MB of memory used by copy-on-write
+[2196] 23 Mar 14:42:17.115 * 10 changes in 300 seconds. Saving...
+[2196] 23 Mar 14:42:17.115 * Background saving started by pid 4059
+[2197] 23 Mar 14:42:17.115 * 10 changes in 300 seconds. Saving...
+[2197] 23 Mar 14:42:17.115 * Background saving started by pid 4060
+[4060] 23 Mar 14:42:17.119 * DB saved on disk
+[4060] 23 Mar 14:42:17.119 * RDB: 0 MB of memory used by copy-on-write
+[4059] 23 Mar 14:42:17.120 * DB saved on disk
+[4059] 23 Mar 14:42:17.120 * RDB: 0 MB of memory used by copy-on-write
+[2195] 23 Mar 14:42:17.195 * Background saving terminated with success
+[2196] 23 Mar 14:42:17.215 * Background saving terminated with success
+[2197] 23 Mar 14:42:17.215 * Background saving terminated with success
+[2197] 23 Mar 14:57:18.024 * 1 changes in 900 seconds. Saving...
+[2197] 23 Mar 14:57:18.024 * Background saving started by pid 4127
+[2195] 23 Mar 14:57:18.025 * 1 changes in 900 seconds. Saving...
+[2195] 23 Mar 14:57:18.025 * Background saving started by pid 4128
+[2196] 23 Mar 14:57:18.025 * 1 changes in 900 seconds. Saving...
+[2196] 23 Mar 14:57:18.025 * Background saving started by pid 4129
+[4128] 23 Mar 14:57:18.032 * DB saved on disk
+[4128] 23 Mar 14:57:18.032 * RDB: 0 MB of memory used by copy-on-write
+[4129] 23 Mar 14:57:18.032 * DB saved on disk
+[4129] 23 Mar 14:57:18.032 * RDB: 0 MB of memory used by copy-on-write
+[4127] 23 Mar 14:57:18.033 * DB saved on disk
+[4127] 23 Mar 14:57:18.033 * RDB: 0 MB of memory used by copy-on-write
+[2195] 23 Mar 14:57:18.125 * Background saving terminated with success
+[2196] 23 Mar 14:57:18.126 * Background saving terminated with success
+[2197] 23 Mar 14:57:18.126 * Background saving terminated with success
+[2196] 23 Mar 15:12:19.071 * 1 changes in 900 seconds. Saving...
+[2196] 23 Mar 15:12:19.124 * Background saving started by pid 4210
+[2197] 23 Mar 15:12:19.071 * 1 changes in 900 seconds. Saving...
+[2197] 23 Mar 15:12:19.125 * Background saving started by pid 4211
+[2195] 23 Mar 15:12:19.072 * 1 changes in 900 seconds. Saving...
+[2195] 23 Mar 15:12:19.125 * Background saving started by pid 4212
+[4212] 23 Mar 15:12:19.162 * DB saved on disk
+[4212] 23 Mar 15:12:19.162 * RDB: 0 MB of memory used by copy-on-write
+[4210] 23 Mar 15:12:19.163 * DB saved on disk
+[4210] 23 Mar 15:12:19.163 * RDB: 0 MB of memory used by copy-on-write
+[4211] 23 Mar 15:12:19.163 * DB saved on disk
+[4211] 23 Mar 15:12:19.163 * RDB: 0 MB of memory used by copy-on-write
+[2196] 23 Mar 15:12:19.225 * Background saving terminated with success
+[2197] 23 Mar 15:12:19.225 * Background saving terminated with success
+[2195] 23 Mar 15:12:19.225 * Background saving terminated with success
+[2197] 23 Mar 15:49:32.860 * 1 changes in 900 seconds. Saving...
+[2197] 23 Mar 15:49:32.860 * Background saving started by pid 4416
+[2196] 23 Mar 15:49:32.860 * 1 changes in 900 seconds. Saving...
+[2196] 23 Mar 15:49:32.860 * Background saving started by pid 4417
+[2195] 23 Mar 15:49:32.860 * 1 changes in 900 seconds. Saving...
+[2195] 23 Mar 15:49:32.860 * Background saving started by pid 4418
+[4417] 23 Mar 15:49:32.864 * DB saved on disk
+[4417] 23 Mar 15:49:32.865 * RDB: 0 MB of memory used by copy-on-write
+[4416] 23 Mar 15:49:32.865 * DB saved on disk
+[4416] 23 Mar 15:49:32.865 * RDB: 0 MB of memory used by copy-on-write
+[4418] 23 Mar 15:49:32.865 * DB saved on disk
+[4418] 23 Mar 15:49:32.865 * RDB: 0 MB of memory used by copy-on-write
+[2197] 23 Mar 15:49:32.961 * Background saving terminated with success
+[2196] 23 Mar 15:49:32.961 * Background saving terminated with success
+[2195] 23 Mar 15:49:32.961 * Background saving terminated with success
+[2197] 23 Mar 18:17:25.405 * 1 changes in 900 seconds. Saving...
+[2196] 23 Mar 18:17:25.406 * 1 changes in 900 seconds. Saving...
+[2195] 23 Mar 18:17:25.406 * 1 changes in 900 seconds. Saving...
+[2196] 23 Mar 18:17:25.444 * Background saving started by pid 5378
+[2197] 23 Mar 18:17:25.444 * Background saving started by pid 5379
+[2195] 23 Mar 18:17:25.444 * Background saving started by pid 5380
+[5378] 23 Mar 18:17:25.517 * DB saved on disk
+[5380] 23 Mar 18:17:25.518 * DB saved on disk
+[5380] 23 Mar 18:17:25.518 * RDB: 0 MB of memory used by copy-on-write
+[5379] 23 Mar 18:17:25.518 * DB saved on disk
+[5379] 23 Mar 18:17:25.518 * RDB: 0 MB of memory used by copy-on-write
+[5378] 23 Mar 18:17:25.518 * RDB: 0 MB of memory used by copy-on-write
+[2196] 23 Mar 18:17:25.545 * Background saving terminated with success
+[2197] 23 Mar 18:17:25.545 * Background saving terminated with success
+[2195] 23 Mar 18:17:25.545 * Background saving terminated with success
+[2197] 23 Mar 18:32:26.056 * 1 changes in 900 seconds. Saving...
+[2195] 23 Mar 18:32:26.057 * 1 changes in 900 seconds. Saving...
+[2195] 23 Mar 18:32:26.057 * Background saving started by pid 5446
+[2196] 23 Mar 18:32:26.057 * 1 changes in 900 seconds. Saving...
+[2196] 23 Mar 18:32:26.057 * Background saving started by pid 5447
+[2197] 23 Mar 18:32:26.057 * Background saving started by pid 5448
+[5448] 23 Mar 18:32:26.142 * DB saved on disk
+[5448] 23 Mar 18:32:26.143 * RDB: 0 MB of memory used by copy-on-write
+[2197] 23 Mar 18:32:26.158 * Background saving terminated with success
+[5447] 23 Mar 18:32:26.159 * DB saved on disk
+[5447] 23 Mar 18:32:26.160 * RDB: 0 MB of memory used by copy-on-write
+[5446] 23 Mar 18:32:26.161 * DB saved on disk
+[5446] 23 Mar 18:32:26.162 * RDB: 0 MB of memory used by copy-on-write
+[2196] 23 Mar 18:32:26.257 * Background saving terminated with success
+[2195] 23 Mar 18:32:26.258 * Background saving terminated with success
+ssdb-server 1.9.4
+Copyright (c) 2012-2015 ssdb.io
+
+ssdb-server 1.9.4
+Copyright (c) 2012-2015 ssdb.io
+
+ssdb-server 1.9.4
+Copyright (c) 2012-2015 ssdb.io
+
+ssdb-server 1.9.4
+Copyright (c) 2012-2015 ssdb.io
+
+[1971] 24 Mar 09:42:02.167 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.19 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6662
+ |    `-._   `._    /     _.-'    |     PID: 1971
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[1971] 24 Mar 09:42:02.170 # Server started, Redis version 2.8.19
+[1971] 24 Mar 09:42:02.170 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[1971] 24 Mar 09:42:02.170 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[1971] 24 Mar 09:42:02.170 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[1969] 24 Mar 09:42:02.172 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.19 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6660
+ |    `-._   `._    /     _.-'    |     PID: 1969
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[1969] 24 Mar 09:42:02.172 # Server started, Redis version 2.8.19
+[1969] 24 Mar 09:42:02.173 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[1969] 24 Mar 09:42:02.173 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[1969] 24 Mar 09:42:02.173 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[1970] 24 Mar 09:42:02.175 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.19 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6661
+ |    `-._   `._    /     _.-'    |     PID: 1970
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[1970] 24 Mar 09:42:02.176 # Server started, Redis version 2.8.19
+[1970] 24 Mar 09:42:02.176 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[1970] 24 Mar 09:42:02.176 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[1970] 24 Mar 09:42:02.176 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[1971] 24 Mar 09:42:02.209 * DB loaded from disk: 0.039 seconds
+[1971] 24 Mar 09:42:02.209 * The server is now ready to accept connections on port 6662
+[1969] 24 Mar 09:42:02.209 * DB loaded from disk: 0.036 seconds
+[1969] 24 Mar 09:42:02.209 * The server is now ready to accept connections on port 6660
+[1970] 24 Mar 09:42:02.209 * DB loaded from disk: 0.033 seconds
+[1970] 24 Mar 09:42:02.209 * The server is now ready to accept connections on port 6661
+[1971] 24 Mar 09:42:03.169 * Connecting to MASTER 127.0.0.1:6660
+[1971] 24 Mar 09:42:03.169 * MASTER <-> SLAVE sync started
+[1971] 24 Mar 09:42:03.169 * Non blocking connect for SYNC fired the event.
+[1971] 24 Mar 09:42:03.169 * Master replied to PING, replication can continue...
+[1971] 24 Mar 09:42:03.169 * Partial resynchronization not possible (no cached master)
+[1969] 24 Mar 09:42:03.169 * Slave 127.0.0.1:6662 asks for synchronization
+[1969] 24 Mar 09:42:03.169 * Full resync requested by slave 127.0.0.1:6662
+[1969] 24 Mar 09:42:03.169 * Starting BGSAVE for SYNC with target: disk
+[1969] 24 Mar 09:42:03.170 * Background saving started by pid 2045
+[1971] 24 Mar 09:42:03.170 * Full resync from master: fcae9bf83de09960b70a095dc7138c03d17241ce:1
+[1970] 24 Mar 09:42:03.177 * Connecting to MASTER 127.0.0.1:6660
+[1970] 24 Mar 09:42:03.177 * MASTER <-> SLAVE sync started
+[1970] 24 Mar 09:42:03.177 * Non blocking connect for SYNC fired the event.
+[1970] 24 Mar 09:42:03.177 * Master replied to PING, replication can continue...
+[1970] 24 Mar 09:42:03.177 * Partial resynchronization not possible (no cached master)
+[1969] 24 Mar 09:42:03.177 * Slave 127.0.0.1:6661 asks for synchronization
+[1969] 24 Mar 09:42:03.177 * Full resync requested by slave 127.0.0.1:6661
+[1969] 24 Mar 09:42:03.177 * Waiting for end of BGSAVE for SYNC
+[1970] 24 Mar 09:42:03.177 * Full resync from master: fcae9bf83de09960b70a095dc7138c03d17241ce:1
+[2045] 24 Mar 09:42:03.194 * DB saved on disk
+[2045] 24 Mar 09:42:03.195 * RDB: 2 MB of memory used by copy-on-write
+[1969] 24 Mar 09:42:03.270 * Background saving terminated with success
+[1969] 24 Mar 09:42:03.270 * Synchronization with slave 127.0.0.1:6662 succeeded
+[1969] 24 Mar 09:42:03.270 * Synchronization with slave 127.0.0.1:6661 succeeded
+[1970] 24 Mar 09:42:03.270 * MASTER <-> SLAVE sync: receiving 2104 bytes from master
+[1970] 24 Mar 09:42:03.270 * MASTER <-> SLAVE sync: Flushing old data
+[1970] 24 Mar 09:42:03.270 * MASTER <-> SLAVE sync: Loading DB in memory
+[1970] 24 Mar 09:42:03.270 * MASTER <-> SLAVE sync: Finished with success
+[1971] 24 Mar 09:42:03.270 * MASTER <-> SLAVE sync: receiving 2104 bytes from master
+[1971] 24 Mar 09:42:03.271 * MASTER <-> SLAVE sync: Flushing old data
+[1971] 24 Mar 09:42:03.271 * MASTER <-> SLAVE sync: Loading DB in memory
+[1971] 24 Mar 09:42:03.271 * MASTER <-> SLAVE sync: Finished with success
+[1971] 24 Mar 10:06:16.115 * 1 changes in 900 seconds. Saving...
+[1970] 24 Mar 10:06:16.115 * 1 changes in 900 seconds. Saving...
+[1969] 24 Mar 10:06:16.116 * 1 changes in 900 seconds. Saving...
+[1969] 24 Mar 10:06:16.117 * Background saving started by pid 2356
+[1970] 24 Mar 10:06:16.120 * Background saving started by pid 2355
+[1971] 24 Mar 10:06:16.122 * Background saving started by pid 2354
+[2356] 24 Mar 10:06:16.224 * DB saved on disk
+[2356] 24 Mar 10:06:16.224 * RDB: 0 MB of memory used by copy-on-write
+[2355] 24 Mar 10:06:16.224 * DB saved on disk
+[2355] 24 Mar 10:06:16.225 * RDB: 4 MB of memory used by copy-on-write
+[2354] 24 Mar 10:06:16.226 * DB saved on disk
+[2354] 24 Mar 10:06:16.226 * RDB: 6 MB of memory used by copy-on-write
+[1969] 24 Mar 10:06:16.317 * Background saving terminated with success
+[1971] 24 Mar 10:06:16.323 * Background saving terminated with success
+[1970] 24 Mar 10:06:16.323 * Background saving terminated with success
+[1971] 24 Mar 10:20:23.081 * 10 changes in 300 seconds. Saving...
+[1971] 24 Mar 10:20:23.081 * Background saving started by pid 2443
+[1969] 24 Mar 10:20:23.084 * 10 changes in 300 seconds. Saving...
+[1969] 24 Mar 10:20:23.084 * Background saving started by pid 2444
+[1970] 24 Mar 10:20:23.087 * 10 changes in 300 seconds. Saving...
+[2443] 24 Mar 10:20:23.087 * DB saved on disk
+[2443] 24 Mar 10:20:23.088 * RDB: 2 MB of memory used by copy-on-write
+[1970] 24 Mar 10:20:23.088 * Background saving started by pid 2445
+[2444] 24 Mar 10:20:23.088 * DB saved on disk
+[2444] 24 Mar 10:20:23.088 * RDB: 0 MB of memory used by copy-on-write
+[2445] 24 Mar 10:20:23.090 * DB saved on disk
+[2445] 24 Mar 10:20:23.090 * RDB: 0 MB of memory used by copy-on-write
+[1971] 24 Mar 10:20:23.182 * Background saving terminated with success
+[1969] 24 Mar 10:20:23.185 * Background saving terminated with success
+[1970] 24 Mar 10:20:23.189 * Background saving terminated with success
+[1971] 24 Mar 10:28:06.156 * 10 changes in 300 seconds. Saving...
+[1971] 24 Mar 10:28:06.156 * Background saving started by pid 2479
+[1969] 24 Mar 10:28:06.157 * 10 changes in 300 seconds. Saving...
+[1969] 24 Mar 10:28:06.158 * Background saving started by pid 2480
+[1970] 24 Mar 10:28:06.158 * 10 changes in 300 seconds. Saving...
+[1970] 24 Mar 10:28:06.158 * Background saving started by pid 2481
+[2480] 24 Mar 10:28:06.169 * DB saved on disk
+[2480] 24 Mar 10:28:06.170 * RDB: 0 MB of memory used by copy-on-write
+[2481] 24 Mar 10:28:06.170 * DB saved on disk
+[2481] 24 Mar 10:28:06.170 * RDB: 0 MB of memory used by copy-on-write
+[2479] 24 Mar 10:28:06.185 * DB saved on disk
+[2479] 24 Mar 10:28:06.186 * RDB: 2 MB of memory used by copy-on-write
+[1971] 24 Mar 10:28:06.258 * Background saving terminated with success
+[1969] 24 Mar 10:28:06.261 * Background saving terminated with success
+[1970] 24 Mar 10:28:06.261 * Background saving terminated with success
+[1971] 24 Mar 10:33:07.134 * 10 changes in 300 seconds. Saving...
+[1970] 24 Mar 10:33:07.134 * 10 changes in 300 seconds. Saving...
+[1969] 24 Mar 10:33:07.134 * 10 changes in 300 seconds. Saving...
+[1970] 24 Mar 10:33:07.179 * Background saving started by pid 2592
+[1971] 24 Mar 10:33:07.180 * Background saving started by pid 2593
+[1969] 24 Mar 10:33:07.180 * Background saving started by pid 2594
+[2594] 24 Mar 10:33:07.227 * DB saved on disk
+[2594] 24 Mar 10:33:07.227 * RDB: 0 MB of memory used by copy-on-write
+[2593] 24 Mar 10:33:07.227 * DB saved on disk
+[2593] 24 Mar 10:33:07.227 * RDB: 2 MB of memory used by copy-on-write
+[2592] 24 Mar 10:33:07.229 * DB saved on disk
+[2592] 24 Mar 10:33:07.229 * RDB: 0 MB of memory used by copy-on-write
+[1970] 24 Mar 10:33:07.280 * Background saving terminated with success
+[1971] 24 Mar 10:33:07.280 * Background saving terminated with success
+[1969] 24 Mar 10:33:07.281 * Background saving terminated with success
+[1969] 24 Mar 10:41:41.042 * 10 changes in 300 seconds. Saving...
+[1969] 24 Mar 10:41:41.043 * Background saving started by pid 2656
+[1971] 24 Mar 10:41:41.043 * 10 changes in 300 seconds. Saving...
+[1971] 24 Mar 10:41:41.043 * Background saving started by pid 2657
+[1970] 24 Mar 10:41:41.043 * 10 changes in 300 seconds. Saving...
+[1970] 24 Mar 10:41:41.043 * Background saving started by pid 2658
+[2656] 24 Mar 10:41:41.051 * DB saved on disk
+[2656] 24 Mar 10:41:41.052 * RDB: 0 MB of memory used by copy-on-write
+[2658] 24 Mar 10:41:41.052 * DB saved on disk
+[2658] 24 Mar 10:41:41.052 * RDB: 0 MB of memory used by copy-on-write
+[2657] 24 Mar 10:41:41.052 * DB saved on disk
+[2657] 24 Mar 10:41:41.052 * RDB: 2 MB of memory used by copy-on-write
+[1969] 24 Mar 10:41:41.143 * Background saving terminated with success
+[1971] 24 Mar 10:41:41.143 * Background saving terminated with success
+[1970] 24 Mar 10:41:41.144 * Background saving terminated with success
+[1969] 24 Mar 10:46:42.005 * 10 changes in 300 seconds. Saving...
+[1969] 24 Mar 10:46:42.005 * Background saving started by pid 2736
+[1971] 24 Mar 10:46:42.005 * 10 changes in 300 seconds. Saving...
+[1971] 24 Mar 10:46:42.006 * Background saving started by pid 2737
+[2736] 24 Mar 10:46:42.009 * DB saved on disk
+[2736] 24 Mar 10:46:42.009 * RDB: 0 MB of memory used by copy-on-write
+[1970] 24 Mar 10:46:42.011 * 10 changes in 300 seconds. Saving...
+[1970] 24 Mar 10:46:42.011 * Background saving started by pid 2738
+[2738] 24 Mar 10:46:42.013 * DB saved on disk
+[2738] 24 Mar 10:46:42.014 * RDB: 0 MB of memory used by copy-on-write
+[2737] 24 Mar 10:46:42.081 * DB saved on disk
+[2737] 24 Mar 10:46:42.081 * RDB: 2 MB of memory used by copy-on-write
+[1969] 24 Mar 10:46:42.106 * Background saving terminated with success
+[1971] 24 Mar 10:46:42.106 * Background saving terminated with success
+[1970] 24 Mar 10:46:42.113 * Background saving terminated with success
+[1971] 24 Mar 10:51:43.083 * 10 changes in 300 seconds. Saving...
+[1971] 24 Mar 10:51:43.084 * Background saving started by pid 2795
+[1969] 24 Mar 10:51:43.084 * 10 changes in 300 seconds. Saving...
+[1969] 24 Mar 10:51:43.084 * Background saving started by pid 2796
+[1970] 24 Mar 10:51:43.084 * 10 changes in 300 seconds. Saving...
+[1970] 24 Mar 10:51:43.084 * Background saving started by pid 2797
+[2795] 24 Mar 10:51:43.100 * DB saved on disk
+[2795] 24 Mar 10:51:43.100 * RDB: 2 MB of memory used by copy-on-write
+[2796] 24 Mar 10:51:43.140 * DB saved on disk
+[2796] 24 Mar 10:51:43.140 * RDB: 0 MB of memory used by copy-on-write
+[2797] 24 Mar 10:51:43.143 * DB saved on disk
+[2797] 24 Mar 10:51:43.144 * RDB: 0 MB of memory used by copy-on-write
+[1971] 24 Mar 10:51:43.184 * Background saving terminated with success
+[1969] 24 Mar 10:51:43.184 * Background saving terminated with success
+[1970] 24 Mar 10:51:43.184 * Background saving terminated with success
+[1969] 24 Mar 10:56:44.001 * 10 changes in 300 seconds. Saving...
+[1969] 24 Mar 10:56:44.001 * Background saving started by pid 2832
+[1970] 24 Mar 10:56:44.003 * 10 changes in 300 seconds. Saving...
+[1970] 24 Mar 10:56:44.003 * Background saving started by pid 2833
+[1971] 24 Mar 10:56:44.003 * 10 changes in 300 seconds. Saving...
+[1971] 24 Mar 10:56:44.003 * Background saving started by pid 2834
+[2832] 24 Mar 10:56:44.007 * DB saved on disk
+[2832] 24 Mar 10:56:44.007 * RDB: 0 MB of memory used by copy-on-write
+[2833] 24 Mar 10:56:44.007 * DB saved on disk
+[2833] 24 Mar 10:56:44.008 * RDB: 0 MB of memory used by copy-on-write
+[2834] 24 Mar 10:56:44.009 * DB saved on disk
+[2834] 24 Mar 10:56:44.009 * RDB: 2 MB of memory used by copy-on-write
+[1969] 24 Mar 10:56:44.102 * Background saving terminated with success
+[1970] 24 Mar 10:56:44.104 * Background saving terminated with success
+[1971] 24 Mar 10:56:44.105 * Background saving terminated with success
+[1970] 24 Mar 11:34:17.931 * 1 changes in 900 seconds. Saving...
+[1970] 24 Mar 11:34:17.931 * Background saving started by pid 3102
+[1971] 24 Mar 11:34:17.931 * 1 changes in 900 seconds. Saving...
+[1971] 24 Mar 11:34:17.955 * Background saving started by pid 3103
+[1969] 24 Mar 11:34:17.931 * 1 changes in 900 seconds. Saving...
+[1969] 24 Mar 11:34:17.955 * Background saving started by pid 3104
+[3102] 24 Mar 11:34:17.977 * DB saved on disk
+[3102] 24 Mar 11:34:17.978 * RDB: 0 MB of memory used by copy-on-write
+[3104] 24 Mar 11:34:17.979 * DB saved on disk
+[3104] 24 Mar 11:34:17.979 * RDB: 0 MB of memory used by copy-on-write
+[3103] 24 Mar 11:34:17.981 * DB saved on disk
+[3103] 24 Mar 11:34:17.981 * RDB: 2 MB of memory used by copy-on-write
+[1970] 24 Mar 11:34:18.055 * Background saving terminated with success
+[1971] 24 Mar 11:34:18.055 * Background saving terminated with success
+[1969] 24 Mar 11:34:18.055 * Background saving terminated with success
+[1969] 24 Mar 11:39:19.005 * 10 changes in 300 seconds. Saving...
+[1969] 24 Mar 11:39:19.005 * Background saving started by pid 3496
+[1971] 24 Mar 11:39:19.007 * 10 changes in 300 seconds. Saving...
+[1971] 24 Mar 11:39:19.007 * Background saving started by pid 3497
+[1970] 24 Mar 11:39:19.009 * 10 changes in 300 seconds. Saving...
+[1970] 24 Mar 11:39:19.010 * Background saving started by pid 3498
+[3496] 24 Mar 11:39:19.011 * DB saved on disk
+[3496] 24 Mar 11:39:19.011 * RDB: 0 MB of memory used by copy-on-write
+[3497] 24 Mar 11:39:19.011 * DB saved on disk
+[3497] 24 Mar 11:39:19.011 * RDB: 2 MB of memory used by copy-on-write
+[3498] 24 Mar 11:39:19.013 * DB saved on disk
+[3498] 24 Mar 11:39:19.013 * RDB: 0 MB of memory used by copy-on-write
+[1969] 24 Mar 11:39:19.106 * Background saving terminated with success
+[1971] 24 Mar 11:39:19.108 * Background saving terminated with success
+[1970] 24 Mar 11:39:19.110 * Background saving terminated with success
+[1970] 24 Mar 13:32:57.854 * 1 changes in 900 seconds. Saving...
+[1971] 24 Mar 13:32:57.854 * 1 changes in 900 seconds. Saving...
+[1969] 24 Mar 13:32:57.855 * 1 changes in 900 seconds. Saving...
+[1971] 24 Mar 13:32:57.909 * Background saving started by pid 3890
+[1970] 24 Mar 13:32:57.909 * Background saving started by pid 3891
+[1969] 24 Mar 13:32:57.910 * Background saving started by pid 3892
+[3891] 24 Mar 13:32:57.994 * DB saved on disk
+[3891] 24 Mar 13:32:57.994 * RDB: 0 MB of memory used by copy-on-write
+[3890] 24 Mar 13:32:57.996 * DB saved on disk
+[3892] 24 Mar 13:32:57.996 * DB saved on disk
+[3892] 24 Mar 13:32:57.996 * RDB: 2 MB of memory used by copy-on-write
+[3890] 24 Mar 13:32:57.996 * RDB: 2 MB of memory used by copy-on-write
+[1971] 24 Mar 13:32:58.009 * Background saving terminated with success
+[1970] 24 Mar 13:32:58.016 * Background saving terminated with success
+[1969] 24 Mar 13:32:58.016 * Background saving terminated with success
+[1970] 24 Mar 13:37:59.005 * 10 changes in 300 seconds. Saving...
+[1970] 24 Mar 13:37:59.005 * Background saving started by pid 4631
+[1971] 24 Mar 13:37:59.006 * 10 changes in 300 seconds. Saving...
+[1971] 24 Mar 13:37:59.006 * Background saving started by pid 4632
+[1969] 24 Mar 13:37:59.006 * 10 changes in 300 seconds. Saving...
+[1969] 24 Mar 13:37:59.006 * Background saving started by pid 4633
+[4631] 24 Mar 13:37:59.011 * DB saved on disk
+[4631] 24 Mar 13:37:59.011 * RDB: 0 MB of memory used by copy-on-write
+[4633] 24 Mar 13:37:59.012 * DB saved on disk
+[4633] 24 Mar 13:37:59.012 * RDB: 0 MB of memory used by copy-on-write
+[4632] 24 Mar 13:37:59.012 * DB saved on disk
+[4632] 24 Mar 13:37:59.012 * RDB: 2 MB of memory used by copy-on-write
+[1970] 24 Mar 13:37:59.105 * Background saving terminated with success
+[1971] 24 Mar 13:37:59.106 * Background saving terminated with success
+[1969] 24 Mar 13:37:59.106 * Background saving terminated with success
+ssdb-server 1.9.4
+Copyright (c) 2012-2015 ssdb.io
+
+ssdb-server 1.9.4
+Copyright (c) 2012-2015 ssdb.io
+
+ssdb-server 1.9.4
+Copyright (c) 2012-2015 ssdb.io
+
+ssdb-server 1.9.4
+Copyright (c) 2012-2015 ssdb.io
+
+[2027] 28 Mar 14:07:15.907 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.19 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6660
+ |    `-._   `._    /     _.-'    |     PID: 2027
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[2027] 28 Mar 14:07:15.909 # Server started, Redis version 2.8.19
+[2027] 28 Mar 14:07:15.910 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[2027] 28 Mar 14:07:15.910 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[2027] 28 Mar 14:07:15.910 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[2027] 28 Mar 14:07:15.932 * DB loaded from disk: 0.023 seconds
+[2027] 28 Mar 14:07:15.932 * The server is now ready to accept connections on port 6660
+[2028] 28 Mar 14:07:15.937 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.19 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6661
+ |    `-._   `._    /     _.-'    |     PID: 2028
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[2028] 28 Mar 14:07:15.940 # Server started, Redis version 2.8.19
+[2028] 28 Mar 14:07:15.940 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[2028] 28 Mar 14:07:15.940 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[2028] 28 Mar 14:07:15.940 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[2028] 28 Mar 14:07:15.940 * DB loaded from disk: 0.000 seconds
+[2028] 28 Mar 14:07:15.940 * The server is now ready to accept connections on port 6661
+[2029] 28 Mar 14:07:15.971 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.19 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6662
+ |    `-._   `._    /     _.-'    |     PID: 2029
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[2029] 28 Mar 14:07:15.973 # Server started, Redis version 2.8.19
+[2029] 28 Mar 14:07:15.973 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[2029] 28 Mar 14:07:15.973 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[2029] 28 Mar 14:07:15.973 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[2029] 28 Mar 14:07:15.973 * DB loaded from disk: 0.000 seconds
+[2029] 28 Mar 14:07:15.973 * The server is now ready to accept connections on port 6662
+[2028] 28 Mar 14:07:16.938 * Connecting to MASTER 127.0.0.1:6660
+[2028] 28 Mar 14:07:16.938 * MASTER <-> SLAVE sync started
+[2028] 28 Mar 14:07:16.938 * Non blocking connect for SYNC fired the event.
+[2028] 28 Mar 14:07:16.938 * Master replied to PING, replication can continue...
+[2028] 28 Mar 14:07:16.939 * Partial resynchronization not possible (no cached master)
+[2027] 28 Mar 14:07:16.939 * Slave 127.0.0.1:6661 asks for synchronization
+[2027] 28 Mar 14:07:16.939 * Full resync requested by slave 127.0.0.1:6661
+[2027] 28 Mar 14:07:16.939 * Starting BGSAVE for SYNC with target: disk
+[2028] 28 Mar 14:07:16.939 * Full resync from master: 2b39aca003f03e51277d1ae36d45778e1591e70f:1
+[2027] 28 Mar 14:07:16.942 * Background saving started by pid 2101
+[2101] 28 Mar 14:07:16.952 * DB saved on disk
+[2101] 28 Mar 14:07:16.952 * RDB: 2 MB of memory used by copy-on-write
+[2029] 28 Mar 14:07:16.973 * Connecting to MASTER 127.0.0.1:6660
+[2029] 28 Mar 14:07:16.973 * MASTER <-> SLAVE sync started
+[2029] 28 Mar 14:07:16.973 * Non blocking connect for SYNC fired the event.
+[2029] 28 Mar 14:07:16.974 * Master replied to PING, replication can continue...
+[2029] 28 Mar 14:07:16.974 * Partial resynchronization not possible (no cached master)
+[2027] 28 Mar 14:07:16.974 * Slave 127.0.0.1:6662 asks for synchronization
+[2027] 28 Mar 14:07:16.974 * Full resync requested by slave 127.0.0.1:6662
+[2027] 28 Mar 14:07:16.974 * Waiting for end of BGSAVE for SYNC
+[2029] 28 Mar 14:07:16.974 * Full resync from master: 2b39aca003f03e51277d1ae36d45778e1591e70f:1
+[2027] 28 Mar 14:07:17.009 * Background saving terminated with success
+[2028] 28 Mar 14:07:17.009 * MASTER <-> SLAVE sync: receiving 9030 bytes from master
+[2028] 28 Mar 14:07:17.010 * MASTER <-> SLAVE sync: Flushing old data
+[2028] 28 Mar 14:07:17.010 * MASTER <-> SLAVE sync: Loading DB in memory
+[2028] 28 Mar 14:07:17.010 * MASTER <-> SLAVE sync: Finished with success
+[2027] 28 Mar 14:07:17.010 * Synchronization with slave 127.0.0.1:6661 succeeded
+[2027] 28 Mar 14:07:17.010 * Synchronization with slave 127.0.0.1:6662 succeeded
+[2029] 28 Mar 14:07:17.010 * MASTER <-> SLAVE sync: receiving 9030 bytes from master
+[2029] 28 Mar 14:07:17.011 * MASTER <-> SLAVE sync: Flushing old data
+[2029] 28 Mar 14:07:17.012 * MASTER <-> SLAVE sync: Loading DB in memory
+[2029] 28 Mar 14:07:17.012 * MASTER <-> SLAVE sync: Finished with success
+[2028] 28 Mar 14:22:16.030 * 1 changes in 900 seconds. Saving...
+[2028] 28 Mar 14:22:16.030 * Background saving started by pid 2358
+[2029] 28 Mar 14:22:16.031 * 1 changes in 900 seconds. Saving...
+[2029] 28 Mar 14:22:16.032 * Background saving started by pid 2359
+[2358] 28 Mar 14:22:16.035 * DB saved on disk
+[2358] 28 Mar 14:22:16.035 * RDB: 2 MB of memory used by copy-on-write
+[2359] 28 Mar 14:22:16.035 * DB saved on disk
+[2359] 28 Mar 14:22:16.035 * RDB: 2 MB of memory used by copy-on-write
+[2028] 28 Mar 14:22:16.131 * Background saving terminated with success
+[2029] 28 Mar 14:22:16.133 * Background saving terminated with success
+[2027] 28 Mar 14:22:18.050 * 1 changes in 900 seconds. Saving...
+[2027] 28 Mar 14:22:18.050 * Background saving started by pid 2360
+[2360] 28 Mar 14:22:18.055 * DB saved on disk
+[2360] 28 Mar 14:22:18.055 * RDB: 0 MB of memory used by copy-on-write
+[2027] 28 Mar 14:22:18.151 * Background saving terminated with success

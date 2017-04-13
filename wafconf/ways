@@ -1,0 +1,14 @@
+directoryDetection
+sqlInjections
+fileAccess
+commandExecution
+fileContains
+abnormalAccess
+xssAttack
+others
+scanner
+cookie
+args
+url
+user-agent
+post

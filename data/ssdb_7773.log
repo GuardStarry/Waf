@@ -1,0 +1,2 @@
+2017-03-16 16:08:14.988 [ERROR] slave.cpp(250): link.read error: Connection reset by peer, reconnecting to master
+2017-03-17 19:52:34.642 [ERROR] slave.cpp(250): link.read error: Connection reset by peer, reconnecting to master

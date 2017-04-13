@@ -1,0 +1,1 @@
+2017-03-23 09:36:02.746 [ERROR] slave.cpp(169): [127.0.0.1|7770]failed to connect to master: 127.0.0.1:7770! Connection refused

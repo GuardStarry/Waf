@@ -1,0 +1,55 @@
+upstream backend{
+	server 127.0.0.1:8080 weight=1;
+	server 127.0.0.1:8081 weight=1;
+	check interval=3000 rise=1 fall=2 timeout=5000;    
+}
+
+server{
+	listen		8088;
+	server_name	_;
+
+	set $template_root "/usr/openresty/waf/view";
+	location /chart{
+		allow 127.0.0.1;
+		deny all;
+		default_type 'text/html';
+		charset utf-8;
+		lua_code_cache off;
+		content_by_lua_file /usr/openresty/waf/lua/chart.lua;
+	}
+	
+	location /Chart-1.0.1-beta.4.js{	
+		root /usr/openresty/waf/view;
+		default_type 'application/x-javascript';
+	}
+	
+	location /log{
+		internal;
+		set $method $arg_method;
+		set $url $arg_url;
+		set $data $arg_data;
+		set $ruletag $arg_ruletag;
+		echo $url;
+		content_by_lua "
+			log(ngx.var.method, ngx.var.url, ngx.var.data, ngx.var.ruletag)
+		";
+	}
+
+}
+
+server{
+	listen	8089;
+	server_name	_;
+	
+	location /{
+		proxy_pass http://backend;
+	}
+	
+	location /status{
+		check_status;
+		access_log off;
+	}
+
+}
+
+
