@@ -1,6 +1,9 @@
 local content_length=tonumber(ngx.req.get_headers()['content-length'])
 local method=ngx.req.get_method()
 local ngxmatch=ngx.re.match
+local switch_util = require "switch_util"
+local switch_get = switch_util.get
+
 initStatistic()
 
 if whiteip() then
@@ -17,7 +20,7 @@ elseif ua() then
 elseif url() then
 elseif args() then
 elseif cookie() then
-elseif PostCheck then
+elseif switch_get("intercept.post") == "1" then
     if method=="POST" then   
             local boundary = get_boundary()
 	    if boundary then

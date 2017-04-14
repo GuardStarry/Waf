@@ -1,23 +1,20 @@
 require 'config'
 
+local locks = require "resty.lock"
 local match = string.match
 local ngxmatch=ngx.re.match
 local unescape=ngx.unescape_uri
 local get_headers = ngx.req.get_headers
-local optionIsOn = function (options) return options == "on" and true or false end
+local switch_util = require "switch_util"
+local switch_list = switch_util.switch_list
+local switch_get = switch_util.get
+
+switch_util.init(switch_list, nil)
 
 redis = require "redis_iresty"
 logpath = logdir 
 rulepath = RulePath
-UrlDeny = optionIsOn(UrlDeny)
-PostCheck = optionIsOn(postMatch)
-CookieCheck = optionIsOn(cookieMatch)
-WhiteCheck = optionIsOn(whiteModule)
-PathInfoFix = optionIsOn(PathInfoFix)
-attacklog = optionIsOn(attacklog)
-CCDeny = optionIsOn(CCDeny)
-Redirect=optionIsOn(Redirect)
-Statistic=optionIsOn(Statistic)
+
 function getClientIp()
         IP  = ngx.var.remote_addr 
         if IP == nil then
@@ -33,7 +30,7 @@ function write(logfile,msg)
     fd:close()
 end
 function log(method,url,data,ruletag)
-    if attacklog then
+    if switch_get("attack.log") == "1" then
         local realIp = getClientIp()
         local ua = ngx.var.http_user_agent
         local servername=ngx.var.server_name
@@ -51,7 +48,7 @@ function log(method,url,data,ruletag)
 end
 
 function log_recent(method,url,data,ruletag)
-    if attacklog then
+    if switch_get("attack.log") == "1" then
 	local realIp = getClientIp()
         local ua = ngx.var.http_user_agent
         local servername=ngx.var.server_name
@@ -94,7 +91,7 @@ indexs=read_rule('index')
 ways = read_rule('ways')
 
 function say_html()
-    if Redirect then
+    if switch_get("intercept.redirect") == "1" then
         ngx.header.content_type = "text/html"
         ngx.status = ngx.HTTP_FORBIDDEN
         ngx.say(html)
@@ -103,7 +100,7 @@ function say_html()
 end
 
 function whiteurl()
-    if WhiteCheck then
+    if switch_get("module.white") == "1" then
         if wturlrules ~=nil then
             for _,rule in pairs(wturlrules) do
                 if ngxmatch(ngx.var.uri,rule,"isjo") then
@@ -164,7 +161,7 @@ end
 
 
 function url()
-    if UrlDeny then
+    if switch_get("intercept.url") == "1" then
         for _,rule in pairs(urlrules) do
             if rule ~="" and ngxmatch(ngx.var.request_uri,rule,"isjo") then
 		record(rule, true)
@@ -206,7 +203,7 @@ function body(data)
 end
 function cookie()
     local ck = ngx.var.http_cookie
-    if CookieCheck and ck then
+    if switch_get("intercept.cookie") == "1" and ck then
         for _,rule in pairs(ckrules) do
             if rule ~="" and ngxmatch(ck,rule,"isjo") then
 		record(rule, true)
@@ -221,7 +218,7 @@ function cookie()
 end
 
 function denycc()
-    if CCDeny then
+    if switch_get("intercept.cc") == "1" then
         local uri=ngx.var.uri
         CCcount=tonumber(string.match(CCrate,'(.*)/'))
         CCseconds=tonumber(string.match(CCrate,'/(.*)'))
@@ -297,7 +294,7 @@ function string.split(str, delimiter)
 end
 
 function initStatistic()
-    if Statistic then
+    if switch_get("data.statistic") == "1" then
         local redW = redis:new({port=1111})
         local redR = redis:new({port=1112})
         local len, err = redR:hlen("index")
