@@ -219,21 +219,18 @@ end
 
 function denycc()
     if switch_get("intercept.cc") == "1" then
-        local uri=ngx.var.uri
-        CCcount=tonumber(string.match(CCrate,'(.*)/'))
-        CCseconds=tonumber(string.match(CCrate,'/(.*)'))
-        local token = getClientIp()..uri
-        local limit = ngx.shared.limit
-        local req,_=limit:get(token)
+        local ip = getClientIp()
+        local limit = ngx.shared.ip_limit
+        local req,_=limit:get(ip)
         if req then
-            if req > CCcount then
+            if req > 50 then
                  ngx.exit(503)
                 return true
             else
-                 limit:incr(token,1)
+                 limit:incr(ip,1)
             end
         else
-            limit:set(token,1,CCseconds)
+            limit:set(ip,1,10)
         end
     end
     return false
@@ -317,15 +314,28 @@ function initStatistic()
     end
 end
 
+local record_count = 0
+local record_count_isrule = 0
+
 function record(value, isrule)
     if isrule then
-        local redR = redis:new({ port = 1112 })
-        local way, err = redR:hget("index", value)
-        local redW = redis:new({ port = 1111 })
-        redW:hincrby("attack:total:time", way, 1)
+        if record_count_isrule >= 10 then
+            local redR = redis:new({ port = 1112 })
+            local way, err = redR:hget("index", value)
+            local redW = redis:new({ port = 1111 })
+            redW:hincrby("attack:total:time", way, record_count_isrule)
+	    record_count_isrule = 0
+	else
+	    record_count_isrule = record_count_isrule + 1
+        end
     else
-        local redW = redis:new({ port = 1111 })
-        redW:hincrby("attack:total:time", value, 1)
+	if record_count >= 10 then
+            local redW = redis:new({ port = 1111 })
+            redW:hincrby("attack:total:time", value, record_count)
+	    record_count = 0
+	else
+	    record_count = record_count + 1
+        end
     end
 end
 
@@ -342,3 +352,24 @@ function update_counter()
 	red:commit_pipeline()
     end
 end
+
+function limit_flow()
+        local lock = locks:new("locks")
+        local elapsed, err = lock:lock("limit_key")
+        local limit_counter = ngx.shared.limit_counter
+        local key = "ip" .. os.time()
+        local limit = 100
+        local current = limit_counter:get(key)
+
+        if current ~= nil and current + 1 > limit then
+                lock:unlock()
+                ngx.exit(503)
+        end
+        if current == nil then
+                limit_counter:set(key, 1, 1)
+        else
+                limit_counter:incr(key, 1)
+        end
+        lock:unlock()
+end
+

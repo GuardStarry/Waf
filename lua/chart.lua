@@ -40,12 +40,8 @@ end
 
 local context = {KV=KVCount, Day = DayCount}
 --是否缓存解析后的模板，默认true  
---template.caching(true)
---template.render("chart.html", context)
-local result, err = ngx.re.match('isCanUseJQ-10', "^isCanUse[J|D]Q-(\\d+)$")
-ngx.say(result[0])
-ngx.say(result[1])
-ngx.say('aaa' .. (ngx.req.get_query_args()['test'] or ""))
+template.caching(true)
+template.render("chart.html", context)
 
 
 

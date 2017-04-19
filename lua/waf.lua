@@ -4,11 +4,12 @@ local ngxmatch=ngx.re.match
 local switch_util = require "switch_util"
 local switch_get = switch_util.get
 
+limit_flow()
 initStatistic()
 
 if whiteip() then
 elseif blockip() then
-elseif denycc() then
+--elseif denycc() then
 elseif ngx.var.http_Acunetix_Aspect then
     record("scanner", false)
     ngx.exit(444)

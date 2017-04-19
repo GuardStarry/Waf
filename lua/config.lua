@@ -3,7 +3,6 @@ logdir = "/usr/openresty/waf/logs/hack/"
 black_fileExt={"php","jsp"}
 ipWhitelist={""}
 ipBlocklist={"1.0.0.1"}
-CCrate = "100/60"
 PRECISION = {86400}
 recentLogNumber = 100
 html=[[
